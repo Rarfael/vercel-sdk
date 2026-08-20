@@ -1,0 +1,1711 @@
+{
+  "NAME": "VERCEL",
+  "Name": "Vercel",
+  "def": "vercel-project-only.json",
+  "main": {
+    "api": {
+      "entity": {},
+      "guide": {}
+    },
+    "custom": {
+      "plurals": {}
+    },
+    "def": {
+      "desc": ""
+    },
+    "kit": {
+      "author": {
+        "name": "",
+        "url": ""
+      },
+      "config": {
+        "docs_order": [
+          "ts",
+          "py",
+          "php",
+          "go",
+          "rb",
+          "lua"
+        ],
+        "headers": {
+          "content-type": "application/json"
+        },
+        "repr": "auto"
+      },
+      "contributor": {},
+      "docs": {},
+      "entity": {
+        "project": {
+          "active": true,
+          "alias": {
+            "field": {}
+          },
+          "fields": [
+            {
+              "active": true,
+              "name": "abuse",
+              "req": true,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 4,
+                "count": 5,
+                "depth": 12
+              }
+            },
+            {
+              "active": true,
+              "name": "accountId",
+              "req": true,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "alias",
+              "req": true,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 5
+              }
+            },
+            {
+              "active": true,
+              "name": "analytics",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "appliedCve55182Migration",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "autoAssignCustomDomains",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "autoAssignCustomDomainsUpdatedBy",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "autoExposeSystemEnvs",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "avatar",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "blobs",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "buildCommand",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "commandForIgnoringBuildStep",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "concurrencyBucketName",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "connectBuildsEnabled",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "connectConfigurationId",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "connectConfigurations",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            {
+              "active": true,
+              "name": "createdAt",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "creator",
+              "req": false,
+              "type": "`$ANY`",
+              "union": {
+                "branches": 4,
+                "count": 2,
+                "depth": 4
+              }
+            },
+            {
+              "active": true,
+              "name": "crons",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "customEnvironments",
+              "req": false,
+              "type": "`$ARRAY`"
+            },
+            {
+              "active": true,
+              "name": "customerSupportCodeVisibility",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "dataCache",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "defaultResourceConfig",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "deploymentExpiration",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "deploymentPolicy",
+              "req": false,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 2,
+                "count": 3,
+                "depth": 6
+              }
+            },
+            {
+              "active": true,
+              "name": "devCommand",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "directoryListing",
+              "op": {
+                "update": {
+                  "req": false,
+                  "type": "`$BOOLEAN`"
+                }
+              },
+              "req": true,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "dismissedToasts",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 4,
+                "count": 3,
+                "depth": 7
+              }
+            },
+            {
+              "active": true,
+              "name": "enableAffectedProjectsDeployments",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "enableExternalRewriteCaching",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "enablePreviewFeedback",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "enableProductionFeedback",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "env",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 17,
+                "count": 2,
+                "depth": 3
+              }
+            },
+            {
+              "active": true,
+              "name": "environmentVariables",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            {
+              "active": true,
+              "name": "expiration",
+              "req": false,
+              "type": "`$ANY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 0
+              }
+            },
+            {
+              "active": true,
+              "name": "features",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "framework",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "gitComments",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "gitForkProtection",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "gitLFS",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "gitProviderOptions",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "gitRepository",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "hasActiveBranches",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "hasDeployments",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "id",
+              "req": true,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "installCommand",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "integrations",
+              "req": false,
+              "type": "`$ARRAY`"
+            },
+            {
+              "active": true,
+              "name": "internalRoutes",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 2,
+                "depth": 6
+              }
+            },
+            {
+              "active": true,
+              "name": "ipBuckets",
+              "req": false,
+              "type": "`$ARRAY`"
+            },
+            {
+              "active": true,
+              "name": "jobs",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "lastAliasRequest",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "lastRollbackTarget",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "latestDeployments",
+              "req": false,
+              "type": "`$ARRAY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            {
+              "active": true,
+              "name": "link",
+              "req": false,
+              "type": "`$STRING`",
+              "union": {
+                "branches": 7,
+                "count": 1,
+                "depth": 0
+              }
+            },
+            {
+              "active": true,
+              "name": "live",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "microfrontends",
+              "req": false,
+              "type": "`$ANY`",
+              "union": {
+                "branches": 3,
+                "count": 1,
+                "depth": 0
+              }
+            },
+            {
+              "active": true,
+              "name": "name",
+              "op": {
+                "update": {
+                  "req": false,
+                  "type": "`$STRING`"
+                }
+              },
+              "req": true,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "nodeVersion",
+              "op": {
+                "update": {
+                  "req": false,
+                  "type": "`$STRING`"
+                }
+              },
+              "req": true,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "oidcTokenConfig",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "optionsAllowlist",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "outputDirectory",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "passiveConnectConfigurationId",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "passport",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "passwordProtection",
+              "op": {
+                "update": {
+                  "req": true,
+                  "type": "`$OBJECT`"
+                }
+              },
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "paused",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "permissions",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "previewDeploymentSuffix",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "previewDeploymentsDisabled",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "productionDeploymentsFastLane",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "protectedSourcemaps",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "protectionBypass",
+              "req": false,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 1
+              }
+            },
+            {
+              "active": true,
+              "name": "protectionConfig",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "publicSource",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "resourceConfig",
+              "op": {
+                "create": {
+                  "req": false,
+                  "type": "`$OBJECT`"
+                },
+                "update": {
+                  "req": false,
+                  "type": "`$OBJECT`"
+                }
+              },
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "rollbackDescription",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "rollingRelease",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "rootDirectory",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "sandbox",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "security",
+              "req": false,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 2,
+                "count": 2,
+                "depth": 5
+              }
+            },
+            {
+              "active": true,
+              "name": "serverlessFunctionRegion",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "serverlessFunctionZeroConfigFailover",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "services",
+              "req": false,
+              "type": "`$ARRAY`"
+            },
+            {
+              "active": true,
+              "name": "skewProtectionAllowedDomains",
+              "req": false,
+              "type": "`$ARRAY`"
+            },
+            {
+              "active": true,
+              "name": "skewProtectionBoundaryAt",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "skewProtectionMaxAge",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "skipGitConnectDuringLink",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "sourceFilesOutsideRootDirectory",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "speedInsights",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "ssoProtection",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "staticIps",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "targets",
+              "req": false,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 3
+              }
+            },
+            {
+              "active": true,
+              "name": "tier",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "tracing",
+              "req": false,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "transferCompletedAt",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "transferStartedAt",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "transferToAccountId",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "transferredFromAccountId",
+              "req": false,
+              "type": "`$STRING`"
+            },
+            {
+              "active": true,
+              "name": "trustedIps",
+              "op": {
+                "update": {
+                  "req": true,
+                  "type": "`$OBJECT`"
+                }
+              },
+              "req": false,
+              "type": "`$ANY`",
+              "union": {
+                "branches": 2,
+                "count": 1,
+                "depth": 0
+              }
+            },
+            {
+              "active": true,
+              "name": "trustedSources",
+              "req": false,
+              "type": "`$OBJECT`",
+              "union": {
+                "branches": 2,
+                "count": 3,
+                "depth": 8
+              }
+            },
+            {
+              "active": true,
+              "name": "updatedAt",
+              "req": false,
+              "type": "`$NUMBER`"
+            },
+            {
+              "active": true,
+              "name": "usageStatus",
+              "req": true,
+              "type": "`$OBJECT`"
+            },
+            {
+              "active": true,
+              "name": "v0",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "v0Created",
+              "req": false,
+              "type": "`$BOOLEAN`"
+            },
+            {
+              "active": true,
+              "name": "webAnalytics",
+              "req": true,
+              "type": "`$OBJECT`"
+            }
+          ],
+          "id": {
+            "field": "id",
+            "name": "id"
+          },
+          "name": "project",
+          "op": {
+            "create": {
+              "input": "data",
+              "name": "create",
+              "points": [
+                {
+                  "active": true,
+                  "args": {
+                    "query": [
+                      {
+                        "active": true,
+                        "example": "my-team-url-slug",
+                        "kind": "query",
+                        "name": "slug",
+                        "orig": "slug",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+                        "kind": "query",
+                        "name": "team_id",
+                        "orig": "team_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "kind": "http",
+                  "method": "POST",
+                  "orig": "/v11/projects",
+                  "parts": [
+                    "v11",
+                    "projects"
+                  ],
+                  "select": {
+                    "exist": [
+                      "slug",
+                      "team_id"
+                    ]
+                  },
+                  "transform": {
+                    "req": {
+                      "buildCommand": "`reqdata.build_command`",
+                      "commandForIgnoringBuildStep": "`reqdata.command_for_ignoring_build_step`",
+                      "devCommand": "`reqdata.dev_command`",
+                      "enableAffectedProjectsDeployments": "`reqdata.enable_affected_projects_deployment`",
+                      "enablePreviewFeedback": "`reqdata.enable_preview_feedback`",
+                      "enableProductionFeedback": "`reqdata.enable_production_feedback`",
+                      "environmentVariables": "`reqdata.environment_variable`",
+                      "framework": "`reqdata.framework`",
+                      "gitRepository": "`reqdata.git_repository`",
+                      "installCommand": "`reqdata.install_command`",
+                      "name": "`reqdata.name`",
+                      "oidcTokenConfig": "`reqdata.oidc_token_config`",
+                      "outputDirectory": "`reqdata.output_directory`",
+                      "previewDeploymentSuffix": "`reqdata.preview_deployment_suffix`",
+                      "previewDeploymentsDisabled": "`reqdata.preview_deployments_disabled`",
+                      "publicSource": "`reqdata.public_source`",
+                      "resourceConfig": "`reqdata.resource_config`",
+                      "rootDirectory": "`reqdata.root_directory`",
+                      "serverlessFunctionRegion": "`reqdata.serverless_function_region`",
+                      "serverlessFunctionZeroConfigFailover": "`reqdata.serverless_function_zero_config_failover`",
+                      "skipGitConnectDuringLink": "`reqdata.skip_git_connect_during_link`",
+                      "ssoProtection": "`reqdata.sso_protection`"
+                    },
+                    "res": "`body`"
+                  }
+                }
+              ]
+            },
+            "load": {
+              "input": "data",
+              "name": "load",
+              "points": [
+                {
+                  "active": true,
+                  "args": {
+                    "query": [
+                      {
+                        "active": true,
+                        "example": "default,enhanced",
+                        "kind": "query",
+                        "name": "build_machine_type",
+                        "orig": "build_machine_type",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "SKIP_NAMESPACE_QUEUE",
+                        "kind": "query",
+                        "name": "build_queue_configuration",
+                        "orig": "build_queue_configuration",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "deprecated",
+                        "orig": "deprecated",
+                        "reqd": false,
+                        "type": "`$BOOLEAN`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "edge_config_id",
+                        "orig": "edge_config_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "edge_config_token_id",
+                        "orig": "edge_config_token_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "1",
+                        "kind": "query",
+                        "name": "elastic_concurrency_enabled",
+                        "orig": "elastic_concurrency_enabled",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "exclude_repo",
+                        "orig": "exclude_repo",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "from",
+                        "orig": "from",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "1",
+                        "kind": "query",
+                        "name": "git_fork_protection",
+                        "orig": "git_fork_protection",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "limit",
+                        "orig": "limit",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "repo",
+                        "orig": "repo",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "repo_id",
+                        "orig": "repo_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "https://github.com/vercel/next.js",
+                        "kind": "query",
+                        "name": "repo_url",
+                        "orig": "repo_url",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "kind": "query",
+                        "name": "search",
+                        "orig": "search",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "my-team-url-slug",
+                        "kind": "query",
+                        "name": "slug",
+                        "orig": "slug",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "1",
+                        "kind": "query",
+                        "name": "static_ips_enabled",
+                        "orig": "static_ips_enabled",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+                        "kind": "query",
+                        "name": "team_id",
+                        "orig": "team_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "kind": "http",
+                  "method": "GET",
+                  "orig": "/v10/projects",
+                  "parts": [
+                    "v10",
+                    "projects"
+                  ],
+                  "select": {
+                    "exist": [
+                      "build_machine_type",
+                      "build_queue_configuration",
+                      "deprecated",
+                      "edge_config_id",
+                      "edge_config_token_id",
+                      "elastic_concurrency_enabled",
+                      "exclude_repo",
+                      "from",
+                      "git_fork_protection",
+                      "limit",
+                      "repo",
+                      "repo_id",
+                      "repo_url",
+                      "search",
+                      "slug",
+                      "static_ips_enabled",
+                      "team_id"
+                    ]
+                  },
+                  "transform": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                },
+                {
+                  "active": true,
+                  "args": {
+                    "params": [
+                      {
+                        "active": true,
+                        "example": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
+                        "kind": "param",
+                        "name": "id",
+                        "orig": "id_or_name",
+                        "reqd": true,
+                        "type": "`$STRING`"
+                      }
+                    ],
+                    "query": [
+                      {
+                        "active": true,
+                        "example": "my-team-url-slug",
+                        "kind": "query",
+                        "name": "slug",
+                        "orig": "slug",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+                        "kind": "query",
+                        "name": "team_id",
+                        "orig": "team_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "kind": "http",
+                  "method": "GET",
+                  "orig": "/v9/projects/{idOrName}",
+                  "parts": [
+                    "v9",
+                    "projects",
+                    "{id}"
+                  ],
+                  "rename": {
+                    "param": {
+                      "idOrName": "id"
+                    }
+                  },
+                  "select": {
+                    "exist": [
+                      "id",
+                      "slug",
+                      "team_id"
+                    ]
+                  },
+                  "transform": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            },
+            "remove": {
+              "input": "data",
+              "name": "remove",
+              "points": [
+                {
+                  "active": true,
+                  "args": {
+                    "params": [
+                      {
+                        "active": true,
+                        "example": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
+                        "kind": "param",
+                        "name": "id",
+                        "orig": "id_or_name",
+                        "reqd": true,
+                        "type": "`$STRING`"
+                      }
+                    ],
+                    "query": [
+                      {
+                        "active": true,
+                        "example": "my-team-url-slug",
+                        "kind": "query",
+                        "name": "slug",
+                        "orig": "slug",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+                        "kind": "query",
+                        "name": "team_id",
+                        "orig": "team_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "kind": "http",
+                  "method": "DELETE",
+                  "orig": "/v9/projects/{idOrName}",
+                  "parts": [
+                    "v9",
+                    "projects",
+                    "{id}"
+                  ],
+                  "rename": {
+                    "param": {
+                      "idOrName": "id"
+                    }
+                  },
+                  "select": {
+                    "exist": [
+                      "id",
+                      "slug",
+                      "team_id"
+                    ]
+                  },
+                  "transform": {
+                    "req": "`reqdata`",
+                    "res": "`body`"
+                  }
+                }
+              ]
+            },
+            "update": {
+              "input": "data",
+              "name": "update",
+              "points": [
+                {
+                  "active": true,
+                  "args": {
+                    "params": [
+                      {
+                        "active": true,
+                        "example": "prj_12HKQaOmR5t5Uy6vdcQsNIiZgHGB",
+                        "kind": "param",
+                        "name": "id",
+                        "orig": "id_or_name",
+                        "reqd": true,
+                        "type": "`$STRING`"
+                      }
+                    ],
+                    "query": [
+                      {
+                        "active": true,
+                        "example": "my-team-url-slug",
+                        "kind": "query",
+                        "name": "slug",
+                        "orig": "slug",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      },
+                      {
+                        "active": true,
+                        "example": "team_1a2b3c4d5e6f7g8h9i0j1k2l",
+                        "kind": "query",
+                        "name": "team_id",
+                        "orig": "team_id",
+                        "reqd": false,
+                        "type": "`$STRING`"
+                      }
+                    ]
+                  },
+                  "kind": "http",
+                  "method": "PATCH",
+                  "orig": "/v9/projects/{idOrName}",
+                  "parts": [
+                    "v9",
+                    "projects",
+                    "{id}"
+                  ],
+                  "rename": {
+                    "param": {
+                      "idOrName": "id"
+                    }
+                  },
+                  "select": {
+                    "exist": [
+                      "id",
+                      "slug",
+                      "team_id"
+                    ]
+                  },
+                  "transform": {
+                    "req": {
+                      "autoAssignCustomDomains": "`reqdata.auto_assign_custom_domain`",
+                      "autoAssignCustomDomainsUpdatedBy": "`reqdata.auto_assign_custom_domains_updated_by`",
+                      "autoExposeSystemEnvs": "`reqdata.auto_expose_system_env`",
+                      "buildCommand": "`reqdata.build_command`",
+                      "commandForIgnoringBuildStep": "`reqdata.command_for_ignoring_build_step`",
+                      "connectConfigurations": "`reqdata.connect_configuration`",
+                      "customerSupportCodeVisibility": "`reqdata.customer_support_code_visibility`",
+                      "deploymentPolicy": "`reqdata.deployment_policy`",
+                      "devCommand": "`reqdata.dev_command`",
+                      "directoryListing": "`reqdata.directory_listing`",
+                      "dismissedToasts": "`reqdata.dismissed_toast`",
+                      "enableAffectedProjectsDeployments": "`reqdata.enable_affected_projects_deployment`",
+                      "enableExternalRewriteCaching": "`reqdata.enable_external_rewrite_caching`",
+                      "enablePreviewFeedback": "`reqdata.enable_preview_feedback`",
+                      "enableProductionFeedback": "`reqdata.enable_production_feedback`",
+                      "framework": "`reqdata.framework`",
+                      "gitForkProtection": "`reqdata.git_fork_protection`",
+                      "gitLFS": "`reqdata.git_lf`",
+                      "installCommand": "`reqdata.install_command`",
+                      "name": "`reqdata.name`",
+                      "nodeVersion": "`reqdata.node_version`",
+                      "oidcTokenConfig": "`reqdata.oidc_token_config`",
+                      "optionsAllowlist": "`reqdata.options_allowlist`",
+                      "outputDirectory": "`reqdata.output_directory`",
+                      "passport": "`reqdata.passport`",
+                      "passwordProtection": "`reqdata.password_protection`",
+                      "previewDeploymentSuffix": "`reqdata.preview_deployment_suffix`",
+                      "previewDeploymentsDisabled": "`reqdata.preview_deployments_disabled`",
+                      "protectedSourcemaps": "`reqdata.protected_sourcemap`",
+                      "publicSource": "`reqdata.public_source`",
+                      "resourceConfig": "`reqdata.resource_config`",
+                      "rootDirectory": "`reqdata.root_directory`",
+                      "serverlessFunctionRegion": "`reqdata.serverless_function_region`",
+                      "serverlessFunctionZeroConfigFailover": "`reqdata.serverless_function_zero_config_failover`",
+                      "skewProtectionAllowedDomains": "`reqdata.skew_protection_allowed_domain`",
+                      "skewProtectionBoundaryAt": "`reqdata.skew_protection_boundary_at`",
+                      "skewProtectionMaxAge": "`reqdata.skew_protection_max_age`",
+                      "skipGitConnectDuringLink": "`reqdata.skip_git_connect_during_link`",
+                      "sourceFilesOutsideRootDirectory": "`reqdata.source_files_outside_root_directory`",
+                      "ssoProtection": "`reqdata.sso_protection`",
+                      "staticIps": "`reqdata.static_ip`",
+                      "tracing": "`reqdata.tracing`",
+                      "trustedIps": "`reqdata.trusted_ip`",
+                      "trustedSources": "`reqdata.trusted_source`"
+                    },
+                    "res": "`body`"
+                  }
+                }
+              ]
+            }
+          },
+          "relations": {
+            "ancestors": []
+          }
+        }
+      },
+      "feature": {
+        "test": {
+          "active": true,
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "config": {
+            "options": {
+              "active": false
+            }
+          },
+          "hook": {
+            "GetData": {
+              "active": true,
+              "await": false
+            },
+            "GetMatch": {
+              "active": true,
+              "await": false
+            },
+            "PostConstruct": {
+              "active": true,
+              "await": false
+            },
+            "PostConstructEntity": {
+              "active": true,
+              "await": false
+            },
+            "PostOperation": {
+              "active": false,
+              "await": false
+            },
+            "PrePoint": {
+              "active": true,
+              "await": false
+            },
+            "PreRequest": {
+              "active": true,
+              "await": false
+            },
+            "PreResponse": {
+              "active": true,
+              "await": false
+            },
+            "PreResult": {
+              "active": true,
+              "await": false
+            },
+            "PreSpec": {
+              "active": true,
+              "await": false
+            },
+            "PreTarget": {
+              "active": false,
+              "await": false
+            },
+            "SetData": {
+              "active": true,
+              "await": false
+            },
+            "SetMatch": {
+              "active": true,
+              "await": false
+            }
+          },
+          "name": "test",
+          "origname": "",
+          "package": "@voxgig/sdkgen",
+          "target": {
+            "seneca-provider": {
+              "deps": {}
+            },
+            "ts": {
+              "deps": {}
+            }
+          },
+          "title": "In-memory mock transport for testing without a live server",
+          "version": "0.0.1"
+        }
+      },
+      "flow": {
+        "BasicProjectFlow": {
+          "active": true,
+          "entity": "project",
+          "key$": "BasicProjectFlow",
+          "kind": "basic",
+          "name": "BasicProjectFlow",
+          "param": {},
+          "step": [
+            {
+              "active": true,
+              "data": {},
+              "input": {
+                "ref": "project_ref01"
+              },
+              "match": {},
+              "op": "create",
+              "spec": [],
+              "valid": []
+            },
+            {
+              "active": true,
+              "data": {},
+              "input": {
+                "ref": "project_ref01",
+                "srcdatavar": "project_ref01_data",
+                "suffix": "_up0",
+                "textfield": "accountId"
+              },
+              "match": {},
+              "op": "update",
+              "spec": [
+                {
+                  "apply": "TextFieldMark",
+                  "def": {
+                    "mark": "Mark01-project_ref01"
+                  }
+                }
+              ],
+              "valid": []
+            },
+            {
+              "active": true,
+              "data": {},
+              "input": {
+                "ref": "project_ref01",
+                "srcdatavar": "project_ref01_data",
+                "suffix": "_dt0"
+              },
+              "match": {
+                "id": "project01"
+              },
+              "op": "load",
+              "spec": [],
+              "valid": [
+                {
+                  "apply": "TextFieldMark",
+                  "def": {
+                    "mark": "Mark01-project_ref01"
+                  }
+                }
+              ]
+            },
+            {
+              "active": true,
+              "data": {},
+              "input": {
+                "ref": "project_ref01",
+                "suffix": "_rm0"
+              },
+              "match": {
+                "id": "project01"
+              },
+              "op": "remove",
+              "spec": [],
+              "valid": []
+            }
+          ]
+        }
+      },
+      "info": {
+        "contact": {
+          "email": "support@vercel.com",
+          "name": "Vercel Support",
+          "url": "https://vercel.com/support"
+        },
+        "description": "Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.",
+        "security": {
+          "in": "header",
+          "name": "Authorization",
+          "prefix": "Bearer",
+          "scheme": "bearerToken",
+          "type": "http"
+        },
+        "servers": [
+          {
+            "description": "Production API",
+            "url": "https://api.vercel.com"
+          }
+        ],
+        "summary": "Vercel combines the best developer experience with an obsessive focus on end-user performance.",
+        "title": "Vercel API",
+        "version": "0.0.1",
+        "website": "https://vercel.com"
+      },
+      "option": {},
+      "repo": {
+        "host": "github.com",
+        "path": ""
+      },
+      "target": {
+        "seneca-provider": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {
+            "@seneca/doc": {
+              "active": true,
+              "kind": "dev",
+              "version": "^8.0.0"
+            },
+            "@seneca/env": {
+              "active": true,
+              "kind": "peer",
+              "version": ">=0.4"
+            },
+            "@seneca/maintain": {
+              "active": true,
+              "kind": "prod",
+              "version": "^0.1.0"
+            },
+            "@seneca/provider": {
+              "active": true,
+              "kind": "peer",
+              "version": ">=4"
+            },
+            "@types/node": {
+              "active": true,
+              "kind": "dev",
+              "version": "^24.0.0"
+            },
+            "seneca": {
+              "active": true,
+              "kind": "peer,dev",
+              "version": ">=3||>=4.0.0-rc2"
+            },
+            "seneca-entity": {
+              "active": true,
+              "kind": "peer",
+              "version": ">=26"
+            },
+            "seneca-msg-test": {
+              "active": true,
+              "kind": "dev",
+              "version": "^4.1.0"
+            },
+            "seneca-promisify": {
+              "active": true,
+              "kind": "peer",
+              "version": ">=3"
+            },
+            "typescript": {
+              "active": true,
+              "kind": "dev",
+              "version": "^5.4.5"
+            }
+          },
+          "ext": "ts",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "seneca-provider",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "../../seneca/vercel-provider",
+            "repo": "",
+            "sdkrel": "../../voxgig-sdk/vercel-sdk"
+          },
+          "package": "@voxgig/sdkgen",
+          "phase": {
+            "agentguide": {
+              "active": false
+            },
+            "entity": {
+              "active": false
+            },
+            "feature": {
+              "active": false
+            },
+            "readme": {
+              "active": false
+            },
+            "test": {
+              "active": false
+            }
+          },
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "npm",
+              "package": "",
+              "state": "pending",
+              "url": "https://registry.npmjs.org",
+              "vault": {
+                "alias": "npm",
+                "env": "",
+                "recipe": "npm"
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "title": "Seneca Provider"
+        },
+        "ts": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {
+            "@types/node": {
+              "active": true,
+              "kind": "dev",
+              "version": "^25.6.0"
+            },
+            "dotenv": {
+              "active": true,
+              "kind": "dev",
+              "version": "^17.4.2"
+            },
+            "typescript": {
+              "active": true,
+              "kind": "dev",
+              "version": "^5.9.3"
+            }
+          },
+          "ext": "ts",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "ts",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "npm",
+              "package": "",
+              "state": "pending",
+              "url": "https://registry.npmjs.org",
+              "vault": {
+                "alias": "npm",
+                "env": "",
+                "recipe": "npm"
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "title": "TypeScript"
+        }
+      },
+      "test": {
+        "live": {
+          "app": false,
+          "base": "",
+          "strict": false
+        }
+      }
+    }
+  },
+  "name": "vercel",
+  "name-": "vercel",
+  "name_": "vercel",
+  "name__orig": "vercel",
+  "origin": "voxgig-sdk"
+}

@@ -1,0 +1,33 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      contact: {
+        email: "support@vercel.com"
+        name: "Vercel Support"
+        url: "https://vercel.com/support"
+      }
+      description: "Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work."
+      security: {
+        in: "header"
+        name: "Authorization"
+        prefix: "Bearer"
+        scheme: "bearerToken"
+        type: "http"
+      }
+      servers: [
+        {
+          description: "Production API"
+          url: "https://api.vercel.com"
+        }
+      ]
+      summary: "Vercel combines the best developer experience with an obsessive focus on end-user performance."
+      title: "Vercel API"
+      version: "0.0.1"
+      website: "https://vercel.com"
+    }
+  }
+}
+

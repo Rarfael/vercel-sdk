@@ -1,0 +1,89 @@
+# Guide
+
+guide: {
+  metrics: count: entity: 1
+  metrics: count: path: 3
+  metrics: count: method: 5
+
+  entity: project: {
+    path: "/v10/projects": {
+      op: load: method: *GET
+    }
+    path: "/v11/projects": {
+      op: create: method: *POST
+      op: create: transform: req: "buildCommand": *("`reqdata.build_command`")|top
+      op: create: transform: req: "commandForIgnoringBuildStep": *("`reqdata.command_for_ignoring_build_step`")|top
+      op: create: transform: req: "devCommand": *("`reqdata.dev_command`")|top
+      op: create: transform: req: "enableAffectedProjectsDeployments": *("`reqdata.enable_affected_projects_deployment`")|top
+      op: create: transform: req: "enablePreviewFeedback": *("`reqdata.enable_preview_feedback`")|top
+      op: create: transform: req: "enableProductionFeedback": *("`reqdata.enable_production_feedback`")|top
+      op: create: transform: req: "environmentVariables": *("`reqdata.environment_variable`")|top
+      op: create: transform: req: "framework": *("`reqdata.framework`")|top
+      op: create: transform: req: "gitRepository": *("`reqdata.git_repository`")|top
+      op: create: transform: req: "installCommand": *("`reqdata.install_command`")|top
+      op: create: transform: req: "name": *("`reqdata.name`")|top
+      op: create: transform: req: "oidcTokenConfig": *("`reqdata.oidc_token_config`")|top
+      op: create: transform: req: "outputDirectory": *("`reqdata.output_directory`")|top
+      op: create: transform: req: "previewDeploymentSuffix": *("`reqdata.preview_deployment_suffix`")|top
+      op: create: transform: req: "previewDeploymentsDisabled": *("`reqdata.preview_deployments_disabled`")|top
+      op: create: transform: req: "publicSource": *("`reqdata.public_source`")|top
+      op: create: transform: req: "resourceConfig": *("`reqdata.resource_config`")|top
+      op: create: transform: req: "rootDirectory": *("`reqdata.root_directory`")|top
+      op: create: transform: req: "serverlessFunctionRegion": *("`reqdata.serverless_function_region`")|top
+      op: create: transform: req: "serverlessFunctionZeroConfigFailover": *("`reqdata.serverless_function_zero_config_failover`")|top
+      op: create: transform: req: "skipGitConnectDuringLink": *("`reqdata.skip_git_connect_during_link`")|top
+      op: create: transform: req: "ssoProtection": *("`reqdata.sso_protection`")|top
+    }
+    path: "/v9/projects/{idOrName}": {
+      rename: param: "idOrName": *"id"
+      op: load: method: *GET
+      op: patch: method: *PATCH
+      op: patch: transform: req: "autoAssignCustomDomains": *("`reqdata.auto_assign_custom_domain`")|top
+      op: patch: transform: req: "autoAssignCustomDomainsUpdatedBy": *("`reqdata.auto_assign_custom_domains_updated_by`")|top
+      op: patch: transform: req: "autoExposeSystemEnvs": *("`reqdata.auto_expose_system_env`")|top
+      op: patch: transform: req: "buildCommand": *("`reqdata.build_command`")|top
+      op: patch: transform: req: "commandForIgnoringBuildStep": *("`reqdata.command_for_ignoring_build_step`")|top
+      op: patch: transform: req: "connectConfigurations": *("`reqdata.connect_configuration`")|top
+      op: patch: transform: req: "customerSupportCodeVisibility": *("`reqdata.customer_support_code_visibility`")|top
+      op: patch: transform: req: "deploymentPolicy": *("`reqdata.deployment_policy`")|top
+      op: patch: transform: req: "devCommand": *("`reqdata.dev_command`")|top
+      op: patch: transform: req: "directoryListing": *("`reqdata.directory_listing`")|top
+      op: patch: transform: req: "dismissedToasts": *("`reqdata.dismissed_toast`")|top
+      op: patch: transform: req: "enableAffectedProjectsDeployments": *("`reqdata.enable_affected_projects_deployment`")|top
+      op: patch: transform: req: "enableExternalRewriteCaching": *("`reqdata.enable_external_rewrite_caching`")|top
+      op: patch: transform: req: "enablePreviewFeedback": *("`reqdata.enable_preview_feedback`")|top
+      op: patch: transform: req: "enableProductionFeedback": *("`reqdata.enable_production_feedback`")|top
+      op: patch: transform: req: "framework": *("`reqdata.framework`")|top
+      op: patch: transform: req: "gitForkProtection": *("`reqdata.git_fork_protection`")|top
+      op: patch: transform: req: "gitLFS": *("`reqdata.git_lf`")|top
+      op: patch: transform: req: "installCommand": *("`reqdata.install_command`")|top
+      op: patch: transform: req: "name": *("`reqdata.name`")|top
+      op: patch: transform: req: "nodeVersion": *("`reqdata.node_version`")|top
+      op: patch: transform: req: "oidcTokenConfig": *("`reqdata.oidc_token_config`")|top
+      op: patch: transform: req: "optionsAllowlist": *("`reqdata.options_allowlist`")|top
+      op: patch: transform: req: "outputDirectory": *("`reqdata.output_directory`")|top
+      op: patch: transform: req: "passport": *("`reqdata.passport`")|top
+      op: patch: transform: req: "passwordProtection": *("`reqdata.password_protection`")|top
+      op: patch: transform: req: "previewDeploymentSuffix": *("`reqdata.preview_deployment_suffix`")|top
+      op: patch: transform: req: "previewDeploymentsDisabled": *("`reqdata.preview_deployments_disabled`")|top
+      op: patch: transform: req: "protectedSourcemaps": *("`reqdata.protected_sourcemap`")|top
+      op: patch: transform: req: "publicSource": *("`reqdata.public_source`")|top
+      op: patch: transform: req: "resourceConfig": *("`reqdata.resource_config`")|top
+      op: patch: transform: req: "rootDirectory": *("`reqdata.root_directory`")|top
+      op: patch: transform: req: "serverlessFunctionRegion": *("`reqdata.serverless_function_region`")|top
+      op: patch: transform: req: "serverlessFunctionZeroConfigFailover": *("`reqdata.serverless_function_zero_config_failover`")|top
+      op: patch: transform: req: "skewProtectionAllowedDomains": *("`reqdata.skew_protection_allowed_domain`")|top
+      op: patch: transform: req: "skewProtectionBoundaryAt": *("`reqdata.skew_protection_boundary_at`")|top
+      op: patch: transform: req: "skewProtectionMaxAge": *("`reqdata.skew_protection_max_age`")|top
+      op: patch: transform: req: "skipGitConnectDuringLink": *("`reqdata.skip_git_connect_during_link`")|top
+      op: patch: transform: req: "sourceFilesOutsideRootDirectory": *("`reqdata.source_files_outside_root_directory`")|top
+      op: patch: transform: req: "ssoProtection": *("`reqdata.sso_protection`")|top
+      op: patch: transform: req: "staticIps": *("`reqdata.static_ip`")|top
+      op: patch: transform: req: "tracing": *("`reqdata.tracing`")|top
+      op: patch: transform: req: "trustedIps": *("`reqdata.trusted_ip`")|top
+      op: patch: transform: req: "trustedSources": *("`reqdata.trusted_source`")|top
+      op: remove: method: *DELETE
+    }
+  }
+
+}

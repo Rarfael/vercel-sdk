@@ -1,0 +1,70 @@
+<?php
+declare(strict_types=1);
+
+// Vercel SDK utility registration
+
+require_once __DIR__ . '/../core/UtilityType.php';
+require_once __DIR__ . '/Clean.php';
+require_once __DIR__ . '/Done.php';
+require_once __DIR__ . '/MakeError.php';
+require_once __DIR__ . '/FeatureAdd.php';
+require_once __DIR__ . '/FeatureHook.php';
+require_once __DIR__ . '/FeatureInit.php';
+require_once __DIR__ . '/Fetcher.php';
+require_once __DIR__ . '/MakeFetchDef.php';
+require_once __DIR__ . '/MakeContext.php';
+require_once __DIR__ . '/MakeOptions.php';
+require_once __DIR__ . '/MakeRequest.php';
+require_once __DIR__ . '/MakeResponse.php';
+require_once __DIR__ . '/MakeResult.php';
+require_once __DIR__ . '/MakePoint.php';
+require_once __DIR__ . '/MakeSpec.php';
+require_once __DIR__ . '/MakeUrl.php';
+require_once __DIR__ . '/Param.php';
+require_once __DIR__ . '/PrepareAuth.php';
+require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
+require_once __DIR__ . '/PrepareHeaders.php';
+require_once __DIR__ . '/PrepareMethod.php';
+require_once __DIR__ . '/PrepareParams.php';
+require_once __DIR__ . '/PreparePath.php';
+require_once __DIR__ . '/PrepareQuery.php';
+require_once __DIR__ . '/ResultBasic.php';
+require_once __DIR__ . '/ResultBody.php';
+require_once __DIR__ . '/ResultHeaders.php';
+require_once __DIR__ . '/TransformRequest.php';
+require_once __DIR__ . '/TransformResponse.php';
+
+VercelUtility::setRegistrar(function (VercelUtility $u): void {
+    $u->clean = [VercelClean::class, 'call'];
+    $u->done = [VercelDone::class, 'call'];
+    $u->make_error = [VercelMakeError::class, 'call'];
+    $u->feature_add = [VercelFeatureAdd::class, 'call'];
+    $u->feature_hook = [VercelFeatureHook::class, 'call'];
+    $u->feature_init = [VercelFeatureInit::class, 'call'];
+    $u->fetcher = [VercelFetcher::class, 'call'];
+    $u->make_fetch_def = [VercelMakeFetchDef::class, 'call'];
+    $u->make_context = [VercelMakeContext::class, 'call'];
+    $u->make_options = [VercelMakeOptions::class, 'call'];
+    $u->make_request = [VercelMakeRequest::class, 'call'];
+    $u->make_response = [VercelMakeResponse::class, 'call'];
+    $u->make_result = [VercelMakeResult::class, 'call'];
+    $u->make_point = [VercelMakePoint::class, 'call'];
+    $u->make_spec = [VercelMakeSpec::class, 'call'];
+    $u->make_url = [VercelMakeUrl::class, 'call'];
+    $u->param = [VercelParam::class, 'call'];
+    $u->prepare_auth = [VercelPrepareAuth::class, 'call'];
+    $u->prepare_body = [VercelPrepareBody::class, 'call'];
+    $u->prepare_headers = [VercelPrepareHeaders::class, 'call'];
+    $u->prepare_method = [VercelPrepareMethod::class, 'call'];
+    $u->prepare_params = [VercelPrepareParams::class, 'call'];
+    $u->prepare_path = [VercelPreparePath::class, 'call'];
+    $u->prepare_query = [VercelPrepareQuery::class, 'call'];
+    $u->graphql_body = [VercelGraphql::class, 'body'];
+    $u->graphql_errors = [VercelGraphql::class, 'errors'];
+    $u->result_basic = [VercelResultBasic::class, 'call'];
+    $u->result_body = [VercelResultBody::class, 'call'];
+    $u->result_headers = [VercelResultHeaders::class, 'call'];
+    $u->transform_request = [VercelTransformRequest::class, 'call'];
+    $u->transform_response = [VercelTransformResponse::class, 'call'];
+});

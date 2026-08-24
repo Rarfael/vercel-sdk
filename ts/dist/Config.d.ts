@@ -34,18 +34,39 @@ declare class Config {
                     count: number;
                     depth: number;
                 };
+                short?: undefined;
                 op?: undefined;
             } | {
                 name: string;
                 req: boolean;
                 type: string;
                 union?: undefined;
+                short?: undefined;
                 op?: undefined;
             } | {
                 name: string;
                 type: string;
                 req?: undefined;
                 union?: undefined;
+                short?: undefined;
+                op?: undefined;
+            } | {
+                name: string;
+                short: string;
+                type: string;
+                req?: undefined;
+                union?: undefined;
+                op?: undefined;
+            } | {
+                name: string;
+                short: string;
+                type: string;
+                union: {
+                    branches: number;
+                    count: number;
+                    depth: number;
+                };
+                req?: undefined;
                 op?: undefined;
             } | {
                 name: string;
@@ -56,6 +77,14 @@ declare class Config {
                     depth: number;
                 };
                 req?: undefined;
+                short?: undefined;
+                op?: undefined;
+            } | {
+                name: string;
+                req: boolean;
+                short: string;
+                type: string;
+                union?: undefined;
                 op?: undefined;
             } | {
                 name: string;
@@ -69,6 +98,20 @@ declare class Config {
                 req: boolean;
                 type: string;
                 union?: undefined;
+                short?: undefined;
+            } | {
+                name: string;
+                op: {
+                    update: {
+                        type: string;
+                        req?: undefined;
+                    };
+                    create?: undefined;
+                };
+                req: boolean;
+                short: string;
+                type: string;
+                union?: undefined;
             } | {
                 name: string;
                 op: {
@@ -78,6 +121,7 @@ declare class Config {
                     };
                     create?: undefined;
                 };
+                short: string;
                 type: string;
                 req?: undefined;
                 union?: undefined;
@@ -93,6 +137,7 @@ declare class Config {
                     };
                 };
                 req: boolean;
+                short: string;
                 type: string;
                 union?: undefined;
             } | {
@@ -104,6 +149,7 @@ declare class Config {
                     };
                     create?: undefined;
                 };
+                short: string;
                 type: string;
                 union: {
                     branches: number;

@@ -1,15 +1,6 @@
 {
-  "NAME": "VERCEL",
-  "Name": "Vercel",
   "def": "vercel-project-only.json",
   "main": {
-    "api": {
-      "entity": {},
-      "guide": {}
-    },
-    "custom": {
-      "plurals": {}
-    },
     "def": {
       "desc": ""
     },
@@ -115,6 +106,7 @@
               "active": true,
               "name": "buildCommand",
               "req": false,
+              "short": "The build command for this project.",
               "type": "`$STRING`"
             },
             {
@@ -145,6 +137,7 @@
               "active": true,
               "name": "connectConfigurations",
               "req": false,
+              "short": "The list of connections from project environment to Secure Compute network",
               "type": "`$ARRAY`",
               "union": {
                 "branches": 2,
@@ -185,6 +178,7 @@
               "active": true,
               "name": "customerSupportCodeVisibility",
               "req": false,
+              "short": "Specifies whether customer support can see git source for a deployment",
               "type": "`$BOOLEAN`"
             },
             {
@@ -203,12 +197,14 @@
               "active": true,
               "name": "deploymentExpiration",
               "req": true,
+              "short": "Retention policies for deployments.",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "deploymentPolicy",
               "req": false,
+              "short": "Project shape.",
               "type": "`$OBJECT`",
               "union": {
                 "branches": 2,
@@ -220,6 +216,7 @@
               "active": true,
               "name": "devCommand",
               "req": false,
+              "short": "The dev command for this project.",
               "type": "`$STRING`"
             },
             {
@@ -238,6 +235,7 @@
               "active": true,
               "name": "dismissedToasts",
               "req": false,
+              "short": "An array of objects representing a Dismissed Toast in regards to a Project.",
               "type": "`$ARRAY`",
               "union": {
                 "branches": 4,
@@ -249,24 +247,28 @@
               "active": true,
               "name": "enableAffectedProjectsDeployments",
               "req": false,
+              "short": "Opt-in to skip deployments when there are no changes to the root directory and its dependencies",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "enableExternalRewriteCaching",
               "req": false,
+              "short": "Specifies whether external rewrite caching is enabled for this project.",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "enablePreviewFeedback",
               "req": false,
+              "short": "Opt-in to preview toolbar on the project level",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "enableProductionFeedback",
               "req": false,
+              "short": "Opt-in to production toolbar on the project level",
               "type": "`$BOOLEAN`"
             },
             {
@@ -284,6 +286,7 @@
               "active": true,
               "name": "environmentVariables",
               "req": false,
+              "short": "Collection of ENV Variables the Project will use",
               "type": "`$ARRAY`",
               "union": {
                 "branches": 2,
@@ -312,6 +315,7 @@
               "active": true,
               "name": "framework",
               "req": false,
+              "short": "The framework that is being used for this project.",
               "type": "`$STRING`"
             },
             {
@@ -324,12 +328,14 @@
               "active": true,
               "name": "gitForkProtection",
               "req": false,
+              "short": "Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "gitLFS",
               "req": false,
+              "short": "Specifies whether Git LFS is enabled for this project.",
               "type": "`$BOOLEAN`"
             },
             {
@@ -342,6 +348,7 @@
               "active": true,
               "name": "gitRepository",
               "req": true,
+              "short": "The Git Repository that will be connected to the project.",
               "type": "`$OBJECT`"
             },
             {
@@ -366,6 +373,7 @@
               "active": true,
               "name": "installCommand",
               "req": false,
+              "short": "The install command for this project.",
               "type": "`$STRING`"
             },
             {
@@ -458,6 +466,7 @@
                 }
               },
               "req": true,
+              "short": "The desired name for the project",
               "type": "`$STRING`"
             },
             {
@@ -476,18 +485,21 @@
               "active": true,
               "name": "oidcTokenConfig",
               "req": false,
+              "short": "OpenID Connect JSON Web Token generation configuration.",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "optionsAllowlist",
               "req": true,
+              "short": "Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "outputDirectory",
               "req": false,
+              "short": "The output directory of the project.",
               "type": "`$STRING`"
             },
             {
@@ -500,6 +512,7 @@
               "active": true,
               "name": "passport",
               "req": true,
+              "short": "Passport configuration for the project.",
               "type": "`$OBJECT`"
             },
             {
@@ -512,6 +525,7 @@
                 }
               },
               "req": false,
+              "short": "Allows to protect project deployments with a password",
               "type": "`$OBJECT`"
             },
             {
@@ -530,12 +544,14 @@
               "active": true,
               "name": "previewDeploymentSuffix",
               "req": false,
+              "short": "Custom domain suffix for preview deployments.",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "previewDeploymentsDisabled",
               "req": false,
+              "short": "Specifies whether preview deployments are disabled for this project.",
               "type": "`$BOOLEAN`"
             },
             {
@@ -548,6 +564,7 @@
               "active": true,
               "name": "protectedSourcemaps",
               "req": false,
+              "short": "Specifies whether sourcemaps are protected and require authentication to access.",
               "type": "`$BOOLEAN`"
             },
             {
@@ -571,6 +588,7 @@
               "active": true,
               "name": "publicSource",
               "req": false,
+              "short": "Deprecated.",
               "type": "`$BOOLEAN`"
             },
             {
@@ -587,24 +605,28 @@
                 }
               },
               "req": true,
+              "short": "Specifies resource override configuration for the project",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "rollbackDescription",
               "req": true,
+              "short": "Description of why a project was rolled back, and by whom.",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "rollingRelease",
               "req": true,
+              "short": "Project-level rolling release configuration that defines how deployments should be gradually rolled out",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "rootDirectory",
               "req": false,
+              "short": "The name of a directory or relative path to the source code of your project.",
               "type": "`$STRING`"
             },
             {
@@ -628,12 +650,14 @@
               "active": true,
               "name": "serverlessFunctionRegion",
               "req": false,
+              "short": "The region to deploy Serverless Functions in this project",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "serverlessFunctionZeroConfigFailover",
               "req": false,
+              "short": "Specifies whether Zero Config Failover is enabled for this project.",
               "type": "`$BOOLEAN`"
             },
             {
@@ -646,30 +670,35 @@
               "active": true,
               "name": "skewProtectionAllowedDomains",
               "req": false,
+              "short": "Cross-site domains allowed to fetch skew-protected assets (hostnames, optionally with leading wildcard like *.example.com).",
               "type": "`$ARRAY`"
             },
             {
               "active": true,
               "name": "skewProtectionBoundaryAt",
               "req": false,
+              "short": "Deployments created before this absolute datetime have Skew Protection disabled.",
               "type": "`$NUMBER`"
             },
             {
               "active": true,
               "name": "skewProtectionMaxAge",
               "req": false,
+              "short": "Deployments created before this rolling window have Skew Protection disabled.",
               "type": "`$NUMBER`"
             },
             {
               "active": true,
               "name": "skipGitConnectDuringLink",
               "req": false,
+              "short": "Opts-out of the message prompting a CLI user to connect a Git repository in `vercel link`.",
               "type": "`$BOOLEAN`"
             },
             {
               "active": true,
               "name": "sourceFilesOutsideRootDirectory",
               "req": false,
+              "short": "Indicates if there are source files outside of the root directory",
               "type": "`$BOOLEAN`"
             },
             {
@@ -682,12 +711,14 @@
               "active": true,
               "name": "ssoProtection",
               "req": true,
+              "short": "The Vercel Auth setting for the project (historically named \\\"SSO Protection\\\")",
               "type": "`$OBJECT`"
             },
             {
               "active": true,
               "name": "staticIps",
               "req": true,
+              "short": "Manage Static IPs for this project",
               "type": "`$OBJECT`"
             },
             {
@@ -711,6 +742,7 @@
               "active": true,
               "name": "tracing",
               "req": false,
+              "short": "Tracing configuration for this project",
               "type": "`$OBJECT`"
             },
             {
@@ -747,6 +779,7 @@
                 }
               },
               "req": false,
+              "short": "Restricts access to deployments based on the incoming request IP address",
               "type": "`$ANY`",
               "union": {
                 "branches": 2,
@@ -758,6 +791,7 @@
               "active": true,
               "name": "trustedSources",
               "req": false,
+              "short": "Deployment Protection Trusted Sources",
               "type": "`$OBJECT`",
               "union": {
                 "branches": 2,
@@ -1372,6 +1406,27 @@
           "origname": "",
           "package": "@voxgig/sdkgen",
           "target": {
+            "go": {
+              "deps": {}
+            },
+            "go-cli": {
+              "deps": {}
+            },
+            "go-mcp": {
+              "deps": {}
+            },
+            "js": {
+              "deps": {}
+            },
+            "lua": {
+              "deps": {}
+            },
+            "php": {
+              "deps": {}
+            },
+            "py": {
+              "deps": {}
+            },
             "seneca-provider": {
               "deps": {}
             },
@@ -1494,6 +1549,463 @@
         "path": ""
       },
       "target": {
+        "go": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {},
+          "ext": "go",
+          "feature": {
+            "fullset": [
+              "test/feature_test.go"
+            ],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "go",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "",
+              "package": "",
+              "state": "pending",
+              "url": "",
+              "vault": {
+                "alias": "",
+                "env": "",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "title": "Golang"
+        },
+        "go-cli": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {},
+          "ext": "go",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "go-cli",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "phase": {
+            "agentguide": {
+              "active": false
+            },
+            "entity": {
+              "active": false
+            },
+            "feature": {
+              "active": false
+            },
+            "readme": {
+              "active": false
+            },
+            "test": {
+              "active": false
+            }
+          },
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "",
+              "package": "",
+              "state": "pending",
+              "url": "",
+              "vault": {
+                "alias": "",
+                "env": "",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "root"
+            },
+            "version": "0.0.1"
+          },
+          "title": "Go CLI"
+        },
+        "go-mcp": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {},
+          "ext": "go",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "go-mcp",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "phase": {
+            "agentguide": {
+              "active": false
+            },
+            "entity": {
+              "active": false
+            },
+            "feature": {
+              "active": false
+            },
+            "readme": {
+              "active": false
+            },
+            "test": {
+              "active": false
+            }
+          },
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "",
+              "package": "",
+              "state": "pending",
+              "url": "",
+              "vault": {
+                "alias": "",
+                "env": "",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "root"
+            },
+            "version": "0.0.1"
+          },
+          "title": "Go MCP server"
+        },
+        "js": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {
+            "dotenv": {
+              "active": true,
+              "kind": "dev",
+              "version": "^17.4.2"
+            }
+          },
+          "ext": "js",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "js",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "npm",
+              "package": "",
+              "state": "pending",
+              "url": "https://registry.npmjs.org",
+              "vault": {
+                "alias": "npm",
+                "env": "",
+                "recipe": "npm"
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "title": "JavaScript"
+        },
+        "lua": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "--"
+          },
+          "deps": {
+            "dkjson": {
+              "active": true,
+              "kind": "prod",
+              "version": "2.5"
+            }
+          },
+          "ext": "lua",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "lua",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "luarocks",
+              "package": "",
+              "state": "pending",
+              "url": "https://luarocks.org",
+              "vault": {
+                "alias": "luarocks",
+                "env": "LUAROCKS_API_KEY",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "title": "Lua"
+        },
+        "php": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "//"
+          },
+          "deps": {},
+          "ext": "php",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "php",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "packagist",
+              "package": "",
+              "state": "pending",
+              "url": "https://packagist.org",
+              "vault": {
+                "alias": "packagist",
+                "env": "PACKAGIST_API_TOKEN",
+                "recipe": ""
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "title": "PHP"
+        },
+        "py": {
+          "active": true,
+          "author": {
+            "name": "",
+            "url": ""
+          },
+          "base": "node_modules/@voxgig/sdkgen/project/.sdk",
+          "comment": {
+            "line": "#"
+          },
+          "deps": {
+            "requests": {
+              "active": true,
+              "kind": "prod",
+              "version": "2.33"
+            }
+          },
+          "ext": "py",
+          "feature": {
+            "fullset": [],
+            "trim": true
+          },
+          "module": {
+            "goversion": "",
+            "name": "vercel",
+            "package": "",
+            "path": ""
+          },
+          "name": "py",
+          "origname": "",
+          "output": {
+            "adopt": false,
+            "path": "",
+            "repo": "",
+            "sdkrel": ""
+          },
+          "package": "@voxgig/sdkgen",
+          "publish": {
+            "registry": {
+              "active": false,
+              "name": "pypi",
+              "package": "",
+              "state": "pending",
+              "url": "https://pypi.org",
+              "vault": {
+                "alias": "pypi",
+                "env": "",
+                "recipe": "pypi"
+              }
+            },
+            "tag": {
+              "active": true,
+              "prefix": "",
+              "vault": {
+                "alias": "github",
+                "recipe": "github"
+              },
+              "via": "port"
+            },
+            "version": "0.0.1"
+          },
+          "srcfeature": false,
+          "title": "Python"
+        },
         "seneca-provider": {
           "active": true,
           "author": {
@@ -1704,8 +2216,5 @@
     }
   },
   "name": "vercel",
-  "name-": "vercel",
-  "name_": "vercel",
-  "name__orig": "vercel",
   "origin": "voxgig-sdk"
 }

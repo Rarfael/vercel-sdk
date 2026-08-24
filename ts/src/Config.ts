@@ -114,6 +114,7 @@ class Config {
         },
         {
           "name": "buildCommand",
+          "short": "The build command for this project.",
           "type": "`$STRING`"
         },
         {
@@ -134,6 +135,7 @@ class Config {
         },
         {
           "name": "connectConfigurations",
+          "short": "The list of connections from project environment to Secure Compute network",
           "type": "`$ARRAY`",
           "union": {
             "branches": 2,
@@ -165,6 +167,7 @@ class Config {
         },
         {
           "name": "customerSupportCodeVisibility",
+          "short": "Specifies whether customer support can see git source for a deployment",
           "type": "`$BOOLEAN`"
         },
         {
@@ -180,10 +183,12 @@ class Config {
         {
           "name": "deploymentExpiration",
           "req": true,
+          "short": "Retention policies for deployments.",
           "type": "`$OBJECT`"
         },
         {
           "name": "deploymentPolicy",
+          "short": "Project shape.",
           "type": "`$OBJECT`",
           "union": {
             "branches": 2,
@@ -193,6 +198,7 @@ class Config {
         },
         {
           "name": "devCommand",
+          "short": "The dev command for this project.",
           "type": "`$STRING`"
         },
         {
@@ -207,6 +213,7 @@ class Config {
         },
         {
           "name": "dismissedToasts",
+          "short": "An array of objects representing a Dismissed Toast in regards to a Project.",
           "type": "`$ARRAY`",
           "union": {
             "branches": 4,
@@ -216,18 +223,22 @@ class Config {
         },
         {
           "name": "enableAffectedProjectsDeployments",
+          "short": "Opt-in to skip deployments when there are no changes to the root directory and its dependencies",
           "type": "`$BOOLEAN`"
         },
         {
           "name": "enableExternalRewriteCaching",
+          "short": "Specifies whether external rewrite caching is enabled for this project.",
           "type": "`$BOOLEAN`"
         },
         {
           "name": "enablePreviewFeedback",
+          "short": "Opt-in to preview toolbar on the project level",
           "type": "`$BOOLEAN`"
         },
         {
           "name": "enableProductionFeedback",
+          "short": "Opt-in to production toolbar on the project level",
           "type": "`$BOOLEAN`"
         },
         {
@@ -241,6 +252,7 @@ class Config {
         },
         {
           "name": "environmentVariables",
+          "short": "Collection of ENV Variables the Project will use",
           "type": "`$ARRAY`",
           "union": {
             "branches": 2,
@@ -263,6 +275,7 @@ class Config {
         },
         {
           "name": "framework",
+          "short": "The framework that is being used for this project.",
           "type": "`$STRING`"
         },
         {
@@ -272,10 +285,12 @@ class Config {
         },
         {
           "name": "gitForkProtection",
+          "short": "Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed",
           "type": "`$BOOLEAN`"
         },
         {
           "name": "gitLFS",
+          "short": "Specifies whether Git LFS is enabled for this project.",
           "type": "`$BOOLEAN`"
         },
         {
@@ -286,6 +301,7 @@ class Config {
         {
           "name": "gitRepository",
           "req": true,
+          "short": "The Git Repository that will be connected to the project.",
           "type": "`$OBJECT`"
         },
         {
@@ -303,6 +319,7 @@ class Config {
         },
         {
           "name": "installCommand",
+          "short": "The install command for this project.",
           "type": "`$STRING`"
         },
         {
@@ -374,6 +391,7 @@ class Config {
             }
           },
           "req": true,
+          "short": "The desired name for the project",
           "type": "`$STRING`"
         },
         {
@@ -388,15 +406,18 @@ class Config {
         },
         {
           "name": "oidcTokenConfig",
+          "short": "OpenID Connect JSON Web Token generation configuration.",
           "type": "`$OBJECT`"
         },
         {
           "name": "optionsAllowlist",
           "req": true,
+          "short": "Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests",
           "type": "`$OBJECT`"
         },
         {
           "name": "outputDirectory",
+          "short": "The output directory of the project.",
           "type": "`$STRING`"
         },
         {
@@ -406,6 +427,7 @@ class Config {
         {
           "name": "passport",
           "req": true,
+          "short": "Passport configuration for the project.",
           "type": "`$OBJECT`"
         },
         {
@@ -416,6 +438,7 @@ class Config {
               "type": "`$OBJECT`"
             }
           },
+          "short": "Allows to protect project deployments with a password",
           "type": "`$OBJECT`"
         },
         {
@@ -428,10 +451,12 @@ class Config {
         },
         {
           "name": "previewDeploymentSuffix",
+          "short": "Custom domain suffix for preview deployments.",
           "type": "`$STRING`"
         },
         {
           "name": "previewDeploymentsDisabled",
+          "short": "Specifies whether preview deployments are disabled for this project.",
           "type": "`$BOOLEAN`"
         },
         {
@@ -440,6 +465,7 @@ class Config {
         },
         {
           "name": "protectedSourcemaps",
+          "short": "Specifies whether sourcemaps are protected and require authentication to access.",
           "type": "`$BOOLEAN`"
         },
         {
@@ -457,6 +483,7 @@ class Config {
         },
         {
           "name": "publicSource",
+          "short": "Deprecated.",
           "type": "`$BOOLEAN`"
         },
         {
@@ -470,20 +497,24 @@ class Config {
             }
           },
           "req": true,
+          "short": "Specifies resource override configuration for the project",
           "type": "`$OBJECT`"
         },
         {
           "name": "rollbackDescription",
           "req": true,
+          "short": "Description of why a project was rolled back, and by whom.",
           "type": "`$OBJECT`"
         },
         {
           "name": "rollingRelease",
           "req": true,
+          "short": "Project-level rolling release configuration that defines how deployments should be gradually rolled out",
           "type": "`$OBJECT`"
         },
         {
           "name": "rootDirectory",
+          "short": "The name of a directory or relative path to the source code of your project.",
           "type": "`$STRING`"
         },
         {
@@ -501,10 +532,12 @@ class Config {
         },
         {
           "name": "serverlessFunctionRegion",
+          "short": "The region to deploy Serverless Functions in this project",
           "type": "`$STRING`"
         },
         {
           "name": "serverlessFunctionZeroConfigFailover",
+          "short": "Specifies whether Zero Config Failover is enabled for this project.",
           "type": "`$BOOLEAN`"
         },
         {
@@ -513,22 +546,27 @@ class Config {
         },
         {
           "name": "skewProtectionAllowedDomains",
+          "short": "Cross-site domains allowed to fetch skew-protected assets (hostnames, optionally with leading wildcard like *.example.com).",
           "type": "`$ARRAY`"
         },
         {
           "name": "skewProtectionBoundaryAt",
+          "short": "Deployments created before this absolute datetime have Skew Protection disabled.",
           "type": "`$NUMBER`"
         },
         {
           "name": "skewProtectionMaxAge",
+          "short": "Deployments created before this rolling window have Skew Protection disabled.",
           "type": "`$NUMBER`"
         },
         {
           "name": "skipGitConnectDuringLink",
+          "short": "Opts-out of the message prompting a CLI user to connect a Git repository in `vercel link`.",
           "type": "`$BOOLEAN`"
         },
         {
           "name": "sourceFilesOutsideRootDirectory",
+          "short": "Indicates if there are source files outside of the root directory",
           "type": "`$BOOLEAN`"
         },
         {
@@ -539,11 +577,13 @@ class Config {
         {
           "name": "ssoProtection",
           "req": true,
+          "short": "The Vercel Auth setting for the project (historically named \\\"SSO Protection\\\")",
           "type": "`$OBJECT`"
         },
         {
           "name": "staticIps",
           "req": true,
+          "short": "Manage Static IPs for this project",
           "type": "`$OBJECT`"
         },
         {
@@ -561,6 +601,7 @@ class Config {
         },
         {
           "name": "tracing",
+          "short": "Tracing configuration for this project",
           "type": "`$OBJECT`"
         },
         {
@@ -587,6 +628,7 @@ class Config {
               "type": "`$OBJECT`"
             }
           },
+          "short": "Restricts access to deployments based on the incoming request IP address",
           "type": "`$ANY`",
           "union": {
             "branches": 2,
@@ -596,6 +638,7 @@ class Config {
         },
         {
           "name": "trustedSources",
+          "short": "Deployment Protection Trusted Sources",
           "type": "`$OBJECT`",
           "union": {
             "branches": 2,

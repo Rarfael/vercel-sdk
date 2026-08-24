@@ -127,42 +127,42 @@ const project = client.Project()
 | `autoExposeSystemEnvs` | `boolean` | No |  |
 | `avatar` | `string` | No |  |
 | `blobs` | `Record<string, any>` | No |  |
-| `buildCommand` | `string` | No |  |
+| `buildCommand` | `string` | No | The build command for this project. |
 | `commandForIgnoringBuildStep` | `string` | No |  |
 | `concurrencyBucketName` | `string` | No |  |
 | `connectBuildsEnabled` | `boolean` | No |  |
 | `connectConfigurationId` | `string` | No |  |
-| `connectConfigurations` | `any[]` | No |  |
+| `connectConfigurations` | `any[]` | No | The list of connections from project environment to Secure Compute network |
 | `createdAt` | `number` | No |  |
 | `creator` | `any` | No |  |
 | `crons` | `Record<string, any>` | Yes |  |
 | `customEnvironments` | `any[]` | No |  |
-| `customerSupportCodeVisibility` | `boolean` | No |  |
+| `customerSupportCodeVisibility` | `boolean` | No | Specifies whether customer support can see git source for a deployment |
 | `dataCache` | `Record<string, any>` | Yes |  |
 | `defaultResourceConfig` | `Record<string, any>` | Yes |  |
-| `deploymentExpiration` | `Record<string, any>` | Yes |  |
-| `deploymentPolicy` | `Record<string, any>` | No |  |
-| `devCommand` | `string` | No |  |
+| `deploymentExpiration` | `Record<string, any>` | Yes | Retention policies for deployments. |
+| `deploymentPolicy` | `Record<string, any>` | No | Project shape. |
+| `devCommand` | `string` | No | The dev command for this project. |
 | `directoryListing` | `boolean` | Yes |  |
-| `dismissedToasts` | `any[]` | No |  |
-| `enableAffectedProjectsDeployments` | `boolean` | No |  |
-| `enableExternalRewriteCaching` | `boolean` | No |  |
-| `enablePreviewFeedback` | `boolean` | No |  |
-| `enableProductionFeedback` | `boolean` | No |  |
+| `dismissedToasts` | `any[]` | No | An array of objects representing a Dismissed Toast in regards to a Project. |
+| `enableAffectedProjectsDeployments` | `boolean` | No | Opt-in to skip deployments when there are no changes to the root directory and its dependencies |
+| `enableExternalRewriteCaching` | `boolean` | No | Specifies whether external rewrite caching is enabled for this project. |
+| `enablePreviewFeedback` | `boolean` | No | Opt-in to preview toolbar on the project level |
+| `enableProductionFeedback` | `boolean` | No | Opt-in to production toolbar on the project level |
 | `env` | `any[]` | No |  |
-| `environmentVariables` | `any[]` | No |  |
+| `environmentVariables` | `any[]` | No | Collection of ENV Variables the Project will use |
 | `expiration` | `any` | No |  |
 | `features` | `Record<string, any>` | No |  |
-| `framework` | `string` | No |  |
+| `framework` | `string` | No | The framework that is being used for this project. |
 | `gitComments` | `Record<string, any>` | Yes |  |
-| `gitForkProtection` | `boolean` | No |  |
-| `gitLFS` | `boolean` | No |  |
+| `gitForkProtection` | `boolean` | No | Specifies whether PRs from Git forks should require a team member's authorization before it can be deployed |
+| `gitLFS` | `boolean` | No | Specifies whether Git LFS is enabled for this project. |
 | `gitProviderOptions` | `Record<string, any>` | Yes |  |
-| `gitRepository` | `Record<string, any>` | Yes |  |
+| `gitRepository` | `Record<string, any>` | Yes | The Git Repository that will be connected to the project. |
 | `hasActiveBranches` | `boolean` | No |  |
 | `hasDeployments` | `boolean` | No |  |
 | `id` | `string` | Yes |  |
-| `installCommand` | `string` | No |  |
+| `installCommand` | `string` | No | The install command for this project. |
 | `integrations` | `any[]` | No |  |
 | `internalRoutes` | `any[]` | No |  |
 | `ipBuckets` | `any[]` | No |  |
@@ -173,49 +173,49 @@ const project = client.Project()
 | `link` | `string` | No |  |
 | `live` | `boolean` | No |  |
 | `microfrontends` | `any` | No |  |
-| `name` | `string` | Yes |  |
+| `name` | `string` | Yes | The desired name for the project |
 | `nodeVersion` | `string` | Yes |  |
-| `oidcTokenConfig` | `Record<string, any>` | No |  |
-| `optionsAllowlist` | `Record<string, any>` | Yes |  |
-| `outputDirectory` | `string` | No |  |
+| `oidcTokenConfig` | `Record<string, any>` | No | OpenID Connect JSON Web Token generation configuration. |
+| `optionsAllowlist` | `Record<string, any>` | Yes | Specify a list of paths that should not be protected by Deployment Protection to enable Cors preflight requests |
+| `outputDirectory` | `string` | No | The output directory of the project. |
 | `passiveConnectConfigurationId` | `string` | No |  |
-| `passport` | `Record<string, any>` | Yes |  |
-| `passwordProtection` | `Record<string, any>` | No |  |
+| `passport` | `Record<string, any>` | Yes | Passport configuration for the project. |
+| `passwordProtection` | `Record<string, any>` | No | Allows to protect project deployments with a password |
 | `paused` | `boolean` | No |  |
 | `permissions` | `Record<string, any>` | No |  |
-| `previewDeploymentSuffix` | `string` | No |  |
-| `previewDeploymentsDisabled` | `boolean` | No |  |
+| `previewDeploymentSuffix` | `string` | No | Custom domain suffix for preview deployments. |
+| `previewDeploymentsDisabled` | `boolean` | No | Specifies whether preview deployments are disabled for this project. |
 | `productionDeploymentsFastLane` | `boolean` | No |  |
-| `protectedSourcemaps` | `boolean` | No |  |
+| `protectedSourcemaps` | `boolean` | No | Specifies whether sourcemaps are protected and require authentication to access. |
 | `protectionBypass` | `Record<string, any>` | No |  |
 | `protectionConfig` | `Record<string, any>` | No |  |
-| `publicSource` | `boolean` | No |  |
-| `resourceConfig` | `Record<string, any>` | Yes |  |
-| `rollbackDescription` | `Record<string, any>` | Yes |  |
-| `rollingRelease` | `Record<string, any>` | Yes |  |
-| `rootDirectory` | `string` | No |  |
+| `publicSource` | `boolean` | No | Deprecated. |
+| `resourceConfig` | `Record<string, any>` | Yes | Specifies resource override configuration for the project |
+| `rollbackDescription` | `Record<string, any>` | Yes | Description of why a project was rolled back, and by whom. |
+| `rollingRelease` | `Record<string, any>` | Yes | Project-level rolling release configuration that defines how deployments should be gradually rolled out |
+| `rootDirectory` | `string` | No | The name of a directory or relative path to the source code of your project. |
 | `sandbox` | `Record<string, any>` | No |  |
 | `security` | `Record<string, any>` | No |  |
-| `serverlessFunctionRegion` | `string` | No |  |
-| `serverlessFunctionZeroConfigFailover` | `boolean` | No |  |
+| `serverlessFunctionRegion` | `string` | No | The region to deploy Serverless Functions in this project |
+| `serverlessFunctionZeroConfigFailover` | `boolean` | No | Specifies whether Zero Config Failover is enabled for this project. |
 | `services` | `any[]` | No |  |
-| `skewProtectionAllowedDomains` | `any[]` | No |  |
-| `skewProtectionBoundaryAt` | `number` | No |  |
-| `skewProtectionMaxAge` | `number` | No |  |
-| `skipGitConnectDuringLink` | `boolean` | No |  |
-| `sourceFilesOutsideRootDirectory` | `boolean` | No |  |
+| `skewProtectionAllowedDomains` | `any[]` | No | Cross-site domains allowed to fetch skew-protected assets (hostnames, optionally with leading wildcard like *.example.com). |
+| `skewProtectionBoundaryAt` | `number` | No | Deployments created before this absolute datetime have Skew Protection disabled. |
+| `skewProtectionMaxAge` | `number` | No | Deployments created before this rolling window have Skew Protection disabled. |
+| `skipGitConnectDuringLink` | `boolean` | No | Opts-out of the message prompting a CLI user to connect a Git repository in `vercel link`. |
+| `sourceFilesOutsideRootDirectory` | `boolean` | No | Indicates if there are source files outside of the root directory |
 | `speedInsights` | `Record<string, any>` | Yes |  |
-| `ssoProtection` | `Record<string, any>` | Yes |  |
-| `staticIps` | `Record<string, any>` | Yes |  |
+| `ssoProtection` | `Record<string, any>` | Yes | The Vercel Auth setting for the project (historically named \"SSO Protection\") |
+| `staticIps` | `Record<string, any>` | Yes | Manage Static IPs for this project |
 | `targets` | `Record<string, any>` | No |  |
 | `tier` | `string` | No |  |
-| `tracing` | `Record<string, any>` | No |  |
+| `tracing` | `Record<string, any>` | No | Tracing configuration for this project |
 | `transferCompletedAt` | `number` | No |  |
 | `transferStartedAt` | `number` | No |  |
 | `transferToAccountId` | `string` | No |  |
 | `transferredFromAccountId` | `string` | No |  |
-| `trustedIps` | `any` | No |  |
-| `trustedSources` | `Record<string, any>` | No |  |
+| `trustedIps` | `any` | No | Restricts access to deployments based on the incoming request IP address |
+| `trustedSources` | `Record<string, any>` | No | Deployment Protection Trusted Sources |
 | `updatedAt` | `number` | No |  |
 | `usageStatus` | `Record<string, any>` | Yes |  |
 | `v0` | `boolean` | No |  |
